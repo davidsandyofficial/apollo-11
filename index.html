@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Apollo 11: Eight Days to the Moon | David Sandy</title>
+<meta name="description" content="A cinematic, scroll-driven journey through Apollo 11, from liftoff on July 16, 1969 to the first steps on the Moon and splashdown.">
+<meta name="theme-color" content="#05060a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Apollo 11: Eight Days to the Moon">
+<meta property="og:description" content="Scroll through the mission that put the first humans on the Moon. July 16 to 24, 1969.">
+<meta property="og:url" content="https://davidsandyofficial.github.io/apollo-11/">
+<meta property="og:image" content="https://davidsandyofficial.github.io/apollo-11/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@davidsandy">
+<meta name="twitter:creator" content="@davidsandy">
+<meta name="twitter:title" content="Apollo 11: Eight Days to the Moon">
+<meta name="twitter:description" content="Scroll through the mission that put the first humans on the Moon. July 16 to 24, 1969.">
+<meta name="twitter:image" content="https://davidsandyofficial.github.io/apollo-11/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <span class="mark">APOLLO 11</span>
+  <span class="clock" id="clock" aria-live="off">T+ 000:00:00</span>
+  <a class="pill" href="https://x.com/davidsandy" target="_blank" rel="noopener">Follow @davidsandy</a>
+</header>
+
+<nav class="rail" aria-label="Mission timeline"><div class="rail-fill" id="railFill"></div><ol id="railDots"></ol></nav>
+
+<main>
+  <section class="hero" id="s-hero" data-t="0">
+    <p class="kicker reveal">July 16 to 24, 1969</p>
+    <h1 class="title reveal"><span>Eight Days</span><span>to the Moon</span></h1>
+    <p class="lede reveal">Three astronauts. One Saturn V. About 240,000 miles each way. Scroll to fly the mission that put the first humans on another world.</p>
+    <a class="cta reveal" href="https://x.com/davidsandy" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.3l-4.9-6.4L6.2 22H3l7.3-8.4L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20z"/></svg>
+      Follow @davidsandy on X
+    </a>
+    <div class="scrollcue reveal" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <section class="chapter" id="s-goal" data-t="0">
+    <div class="card reveal">
+      <p class="date">May 25, 1961</p>
+      <h2>A Promise to Congress</h2>
+      <p>President John F. Kennedy asks the United States to commit to landing a man on the Moon and returning him safely to Earth before the end of the decade. The country has a total of about 15 minutes of human spaceflight experience.</p>
+    </div>
+  </section>
+
+  <section class="chapter launch" id="s-launch" data-t="0">
+    <div class="stage"><svg class="rocket" id="rocket" viewBox="0 0 60 300" aria-hidden="true">
+      <defs><linearGradient id="rk" x1="0" x2="1"><stop offset="0" stop-color="#9aa0aa"/><stop offset=".45" stop-color="#fff"/><stop offset="1" stop-color="#8a909a"/></linearGradient>
+      <radialGradient id="fl" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#fff7d6"/><stop offset=".35" stop-color="#ffb347"/><stop offset="1" stop-color="#ff4d00" stop-opacity="0"/></radialGradient></defs>
+      <path d="M30 0 L36 22 L36 40 L24 40 L24 22 Z" fill="url(#rk)"/>
+      <rect x="22" y="40" width="16" height="30" fill="url(#rk)"/>
+      <path d="M22 70 L18 86 L42 86 L38 70 Z" fill="url(#rk)"/>
+      <rect x="18" y="86" width="24" height="60" fill="url(#rk)"/>
+      <rect x="18" y="118" width="24" height="6" fill="#111"/>
+      <rect x="16" y="146" width="28" height="110" fill="url(#rk)"/>
+      <rect x="16" y="160" width="28" height="8" fill="#111"/><rect x="16" y="200" width="14" height="40" fill="#111" opacity=".85"/>
+      <path d="M16 236 L6 262 L16 256 Z M44 236 L54 262 L44 256 Z" fill="#222"/>
+      <ellipse class="flame" cx="30" cy="282" rx="16" ry="30" fill="url(#fl)"/>
+    </svg></div>
+    <div class="card reveal">
+      <p class="date">July 16, 1969 &middot; 9:32 a.m. EDT</p>
+      <h2>Liftoff</h2>
+      <p>The Saturn V, about 363 feet tall, the tallest and most powerful rocket flown at the time, rises from Launch Complex 39A at Kennedy Space Center. Aboard: Neil Armstrong, Michael Collins and Edwin "Buzz" Aldrin.</p>
+      <div class="stats"><div><b data-count="363">0</b><span>feet tall</span></div><div><b data-count="3">0</b><span>crew</span></div><div><b data-count="3">0</b><span>rocket stages</span></div></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="s-coast" data-t="1">
+    <div class="card reveal">
+      <p class="date">July 16 to 19, 1969</p>
+      <h2>Three Days Across the Dark</h2>
+      <p>After one and a half orbits of Earth, the third stage fires again to send the crew toward the Moon. The command module Columbia and lunar module Eagle coast for about three days before braking into lunar orbit on July 19.</p>
+      <div class="trajectory" aria-hidden="true"><svg viewBox="0 0 400 120"><circle cx="40" cy="60" r="22" fill="#2b6fd6"/><circle cx="360" cy="60" r="10" fill="#cfcfc8"/><path id="traj" d="M62 60 C 150 -10, 270 130, 350 60" fill="none" stroke="#ffd27a" stroke-width="2" stroke-dasharray="4 6"/><circle r="4" fill="#fff"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#traj"/></animateMotion></circle></svg></div>
+    </div>
+  </section>
+
+  <section class="chapter descent" id="s-descent" data-t="4">
+    <div class="altimeter reveal" aria-hidden="true"><span class="alt-label">Altitude</span><span class="alt" id="alt">50,000</span><span class="alt-unit">feet</span></div>
+    <div class="card reveal">
+      <p class="date">July 20, 1969</p>
+      <h2>Powered Descent</h2>
+      <p>Armstrong and Aldrin undock in Eagle while Collins stays in orbit aboard Columbia. On the way down, the guidance computer flashes 1202 and 1201 program alarms. Seeing a boulder-strewn crater ahead, Armstrong takes semi-manual control and flies on to find a safe spot as fuel runs low.</p>
+    </div>
+  </section>
+
+  <section class="chapter landed" id="s-landed" data-t="4">
+    <div class="card big reveal">
+      <p class="date">4:17 p.m. EDT &middot; Sea of Tranquility</p>
+      <blockquote>"Houston, Tranquility Base here. The Eagle has landed."</blockquote>
+      <p class="cite">Neil Armstrong</p>
+    </div>
+  </section>
+
+  <section class="chapter step" id="s-step" data-t="5">
+    <div class="card big reveal">
+      <p class="date">10:56 p.m. EDT, July 20 &middot; 02:56 UTC, July 21</p>
+      <blockquote>"That's one small step for man, one giant leap for mankind."</blockquote>
+      <p class="cite">Neil Armstrong, as broadcast to an estimated 600 million people</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="s-eva" data-t="5">
+    <div class="card reveal">
+      <p class="date">July 21, 1969</p>
+      <h2>Two and a Half Hours on the Moon</h2>
+      <p>Aldrin joins Armstrong about 19 minutes later. Together they plant the U.S. flag, deploy experiments including a laser reflector still used today, and collect about 47.5 pounds of lunar rock and soil. A plaque on Eagle's leg reads: "We came in peace for all mankind."</p>
+      <div class="stats"><div><b data-count="21">0</b><span>hours on the surface</span></div><div><b data-count="47">0</b><span>lb of samples</span></div><div><b data-count="2">0</b><span>humans walking</span></div></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="s-home" data-t="8">
+    <div class="card reveal">
+      <p class="date">July 24, 1969</p>
+      <h2>Splashdown</h2>
+      <p>After rejoining Collins in lunar orbit, the crew heads home. Columbia splashes down in the Pacific Ocean and is recovered by USS Hornet. Mission time: 8 days, 3 hours, 18 minutes.</p>
+    </div>
+  </section>
+
+  <section class="finale" id="s-end" data-t="8">
+    <h2 class="title reveal"><span>Twelve People</span><span>Have Walked There</span></h2>
+    <p class="lede reveal">Apollo 11 was the first of six crewed landings between 1969 and 1972. Want more history told like this?</p>
+    <a class="cta big reveal" href="https://x.com/davidsandy" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.3l-4.9-6.4L6.2 22H3l7.3-8.4L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20z"/></svg>
+      Follow @davidsandy on X
+    </a>
+    <p class="fine reveal">Facts from NASA's Apollo 11 mission records. Built by David Sandy.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
